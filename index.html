@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreating RecipeApp</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        th {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="container">
+
+    <br>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="recipeLabel">Recipe</label>
+                        <input type="text" id="recipe" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <button class="btn btn-primary" id="newRecipe" style="margin-top: 10px; margin-bottom: 10px; margin-right: 10px">Create Recipe</button>
+                    <buton class="btn btn-danger" id="deleteRecipe" style="margin-top: 10px; margin-bottom: 10px">Delete Recipe</buton>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="ingredientLabel">Ingredient</label>
+                        <input type="text" id="ingredient" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="amountLabel">Amount</label>
+                        <input type="text" id="amount" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button class="btn btn-primary" id="newIngredient" style="margin-top: 10px">Add Ingredient</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <h2 id="recipeHeader"></h2>
+    <br>
+    <div class="row">
+        <div class="col-sm">
+            <table id="recipeTable" class="table table-dark table-striped">
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount</th>
+                    <th>
+                        <button class="btn btn-danger" id="deleteAll">Delete All</button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+    <script src="recipe.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
